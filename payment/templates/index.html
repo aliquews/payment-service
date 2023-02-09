@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    <title>Buy {{item.name}}</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+    <h1>{{item.name}}</h1>
+    <p>{{item.description}}</p>
+    <p>{{item.price}}$</p>
+    <a href="{% url 'buy-item' item.pk %}">
+        <button type="submit">Buy</button>
+    </a>
+</body>
+
+</html>
